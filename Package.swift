@@ -35,7 +35,7 @@ let package = Package(
     ],
     targets: [
         .target(name: "OAuthSwift", dependencies: [], path: "Sources"),
-        .target(name: "OAuthSwiftExtension", dependencies: [], path: "Sources", swiftSettings: [.define("OAUTH_APP_EXTENSIONS")]),
+        .target(name: "OAuthSwiftExtension", dependencies: [], path: "ExtensionSources", swiftSettings: [.define("OAUTH_APP_EXTENSIONS")]),
         .testTarget(name: "OAuthSwiftTests", dependencies: ["OAuthSwift", "Erik", "Kanna", "Swifter"], path: "OAuthSwiftTests"),
     ]
 )
